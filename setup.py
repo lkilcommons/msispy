@@ -11,6 +11,7 @@
 #
 # Liam Kilcommons - University of Colorado, Boulder - Colorado Center for Astrodynamics Research
 # December, 2014
+# (C) 2014 University of Colorado AES-CCAR-SEDA (Space Environment Data Analysis) Group
 
 import os
 import glob
