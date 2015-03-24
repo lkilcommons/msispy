@@ -1,3 +1,4 @@
 include *.txt
 include *.md
+include *.ipynb
 recursive-include docs *.txt
