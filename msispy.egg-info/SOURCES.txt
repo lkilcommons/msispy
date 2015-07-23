@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+MsisNotebook.ipynb
+README.md
+README.txt
+TestMsis.ipynb
+setup.py
+msispy/__init__.py
+msispy/apf107.dat
+msispy/msisFort-f2pywrappers.f
+msispy/msisFortmodule.c
+msispy/nrlmsise00_sub.for
+msispy.egg-info/PKG-INFO
+msispy.egg-info/SOURCES.txt
+msispy.egg-info/dependency_links.txt
+msispy.egg-info/not-zip-safe
+msispy.egg-info/top_level.txt

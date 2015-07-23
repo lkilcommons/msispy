@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: msispy
+Version: 0.1.0
+Summary: The NRLMSISE00 model of the neutral atmosphere
+Home-page: http://pypi.python.org/pypi/MsisPy
+Author: University of Colorado Space Environent Data Analysis Group (CU-SEDA)
+Author-email: liam.kilcommons@colorado.edu
+License: LICENSE.txt
+Download-URL: https://github.com/vtsuperdarn/davitpy/models/msis
+Description: This is a standalone version of the VT SuperDARN Davitpy MSIS (nrlmsise00). All due credit to the original authors.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python

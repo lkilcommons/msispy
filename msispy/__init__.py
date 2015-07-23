@@ -310,8 +310,10 @@ def msis(lat,lon,alt,dt=None,f107=None,ap_daily=None,f107a=None,ap3=None,ap33=No
 	temp = numpy.empty((npts,1))
 	temp.fill(numpy.nan)
 	#Preallocate for speed
-	species = OrderedDict((('HE',temp.copy()), ('O',temp.copy()), ('N2',temp.copy()),('O2',temp.copy()),\
+	species = OrderedDict((('HE',temp.copy()), ('O',temp.copy()), ('N2',temp.copy()),('O2',temp.copy()),
 	 ('AR',temp.copy()),('mass',temp.copy()),('H',temp.copy()),('N',temp.copy()),('AO',temp.copy())))
+	units, descriptions = OrderedDict(),OrderedDict()
+
 	t_exo = temp.copy()
 	t_alt = temp.copy()
 
@@ -332,5 +334,14 @@ def msis(lat,lon,alt,dt=None,f107=None,ap_daily=None,f107a=None,ap3=None,ap33=No
 		t_exo[p] = t[0]
 		t_alt[p] = t[1]
 
-	return species,t_exo,t_alt,drivers
+	for atom in species:
+		if atom != 'mass':
+			units[atom] = '#/cm^3'
+			descriptions[atom] = "%s Number Density" % (atom)
+		else:
+			units[atom] = 'gm/cm^3'
+			descriptions[atom] = 'Total Mass Density'
+	descriptions['T_exo'],units['T_exo'] = 'Temperature at Exobase','K'
+	descriptions['T'],units['T'] = 'Temperature','K'
+	return species, t_exo, t_alt, units, descriptions, drivers
 
