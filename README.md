@@ -13,3 +13,17 @@ and provides the return values in a dictionary with keys that name each variable
 generally useful as well as compatible with [AtModWeb](https://github.com/lkilcommons/atmodweb) and [AtModExplorer](https://github.com/lkilcommons/atmodexplorer)
 
 The msispy.msis function is the vectorized interface. See it's source for more info.
+
+## Dependancies
+Make sure you have a Fortran compiler installed such as gfortran. 
+
+If you are using the Anaconda python distrubtion you can
+`conda install gfortran`, from the command line.
+
+## Package Installation
+
+```{sh}
+git clone https://github.com/lkilcommons/msispy
+cd msispy
+python setup.py install
+```
