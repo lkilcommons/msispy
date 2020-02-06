@@ -119,7 +119,7 @@ Obtain F107 and AP required for MSIS input from tabulated values in IRI data.
         dictOut['datetime'] = mydatetime
     else:
         print('Invalid date {}'.format(mydatetime))
-        print('Date must be in range {} to {}'.format(tdate[0],tdate[-1]))
+        print('Available dates in {} are {} to {}'.format(year,tdate[0],tdate[-1]))
         return
 
     # Find entry for date
