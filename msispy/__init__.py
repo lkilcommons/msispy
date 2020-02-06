@@ -147,6 +147,9 @@ Obtain F107 and AP required for MSIS input from tabulated values in IRI data.
 
     return dictOut
 
+#Tabulate the last datetime we can use
+latest_f107ap_datetime = getF107Ap()['datetime']
+
 def msis(lat,lon,alt,dt=None,f107=None,ap_daily=None,f107a=None,ap3=None,ap33=None,ap36=None,ap39=None,apa1233=None,apa3657=None):
     import numpy
     from collections import OrderedDict
